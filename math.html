@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>電卓</title></head>
+    <body><script type ="text/javascript">
+    function addTF(str)
+        {
+            document.faceForm.face.value += str;
+        }
+    function go(){
+        var menu = document.getElementById("testarea");
+        menu.value = new Function("return " + menu.value)();
+    }    
+        </script>
+        <h1>簡素な電卓</h1>
+                <form name="faceForm">
+            <textarea class="inputdata" name="face" id="testarea" cols="50" rows="5" placeholder="ここには式が出力されます、手入力も可能ですが、割り算は'/'掛け算は'*'です."></textarea>
+            <br><input type ="button" value="+" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="*" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="/" onClick="addTF(this.value)" class="btn-m">
+            <br><input type ="button" value="(" onClick="addTF(this.value)" class="btn-m"><input type ="button" value=")" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="-" onClick="addTF(this.value)" class="btn-m"><br><input type ="button" value="7" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="8" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="9" onClick="addTF(this.value)" class="btn-m"><br><input type ="button" value="4" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="5" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="6" onClick="addTF(this.value)" class="btn-m"><br><input type ="button" value="1" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="2" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="3" onClick="addTF(this.value)" class="btn-m"><br>
+                <input type ="button" value="0" onClick="addTF(this.value)" class="btn-m"><input type ="button" value="00" onClick="addTF(this.value)" class="btn-m"><input type ="reset" value="AC" class="btn-m">
+                <br><input type ="button" value="." onClick="addTF(this.value)" class="btn-m"><input type ="button" value="=" onClick="go()" class="btn-l">
+            </form>
+
+        <style type="text/css">            
+            .inputdata {
+                 font-size: 15pt;   
+                }
+                .span {
+                 font-size: 15pt;   
+                }
+            .btn-m {
+                width: 200px;
+                padding: 50px;
+                font-size: 15pt;
+            }    
+            .btn-l {
+                width: 400px;
+                padding: 0px;
+                color: #fff;
+                background-color: #321cf5;
+                font-size: 15pt;
+                
+            }    
+                </style>
+        </body>
+</html>
