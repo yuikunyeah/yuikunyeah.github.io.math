@@ -12,6 +12,6 @@
   box-shadow: none;
 }
 .newdom:hover {
-  background: #2b2929;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
