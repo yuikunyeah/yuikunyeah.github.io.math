@@ -1,6 +1,5 @@
 function roadme(rerod){
  if(rerod = 1){
- InnerHtml = "<p>これから追加していきます</p>";
-  parent.remove("deletebutton");
+document.getelElentById("newdom").value = "<p>これから追加していきます</p>";
  }
 }
