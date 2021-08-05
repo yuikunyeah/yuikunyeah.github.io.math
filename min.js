@@ -1,5 +1,5 @@
-function roadme(rerod){
- if(rerod = 1){
+$(fanction() {
+$("newdom").on("click",function(){
 document.getelElentById("newdom").value = "<p>これから追加していきます</p>";
- }
-}
+});
+});
