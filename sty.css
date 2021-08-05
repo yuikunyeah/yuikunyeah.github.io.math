@@ -1,14 +1,16 @@
-.deletebutton{
-　border: 1px solid #000000;
+.newdom{
+  border: 1px solid #000000;
   background: #000000;
   color:#ffffff;
+　padding: 20px;
+  border-radius: 5px;
 }
-.deletebutton:active{
+.newdom:active{
   position: relative;
   top: 5px;
   box-shadow: none;
 }
-.deletebutton:hover {
+.newdom:hover {
   background: #2b2929;
   color: #fff;
 }
