@@ -1,0 +1,14 @@
+.deletebutton{
+　border: 1px solid #000000;
+  background: #000000;
+  color:#ffffff;
+}
+.deletebutton:active{
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+.deletebutton:hover {
+  background: #2b2929;
+  color: #fff;
+}
