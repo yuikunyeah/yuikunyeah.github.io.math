@@ -3,9 +3,9 @@ a.newdom{
   border: 1px solid #000000;
   background: #000000;
   color:#ffffff;
-　padding: 25px;
   border-radius: 5px;
   text-decoration:none;
+  　padding: 25px;
 }
 a.newdom:active{
   position: relative;
