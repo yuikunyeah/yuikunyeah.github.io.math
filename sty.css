@@ -1,4 +1,4 @@
-#newdom{
+a.newdom{
   display:block;
   border: 1px solid #000000;
   background: #000000;
@@ -6,12 +6,12 @@
 　padding: 20px;
   border-radius: 5px;
 }
-#newdom:active{
+a.newdom:active{
   position: relative;
   top: 5px;
   box-shadow: none;
 }
-#newdom:hover {
+a.newdom:hover {
   background: #fff;
   color: #000;
 }
