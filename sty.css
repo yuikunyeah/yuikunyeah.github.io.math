@@ -5,6 +5,7 @@ a.newdom{
   color:#ffffff;
 　padding: 50px;
   border-radius: 5px;
+  text-decoration:none;
 }
 a.newdom:active{
   position: relative;
