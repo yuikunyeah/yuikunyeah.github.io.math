@@ -21,12 +21,8 @@
         }
     function go(){
         var menu = document.getElementById("testarea");
-        if(menu=null){
-        alert('正確な値をください');
-        }else{
         
         menu.value = new Function("return " + menu.value)();
-    }
     }
         </script>
         <h1>簡素な電卓</h1>
