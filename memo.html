@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>memo</title>
+</head>
+<body>
+    <h2>memo</h2>
+    <input id="title" placeholder="title"><br><textarea id="main" placeholder="main"></textarea><br><button onclick="send()">send</button><button onclick="del()">delete</button><br><div id="sent"></div>
+    <br><h2>メモについて</h2><p>あなたが大事だと思ったことを1つ登録できます。拡張できますが、その際はscratch("scratch.mit.edu/users/yuikunyeah")まで</p>
+    <script type="text/javascript">
+    var title;
+    var main;
+    var inputtitle;
+    window.onload = function(){
+        title = localStorage.getItem(1);
+        inputtitle = document.getElementById("sent");
+        if(title != 0){
+        inputtitle.innerHTML =title;
+        }
+    }
+
+    function send(){
+        title = document.getElementById("title");
+        main = document.getElementById("main");
+        inputtitle = document.getElementById("sent");
+        sent.innerHTML='<h2 id="inputh2">'+title.value+'</h2><p id="inputp">'+main.value+'</p>';
+        localStorage.setItem(1, '<h2 id="inputh2">'+title.value+'</h2><p id="inputp">'+main.value+'</p>');
+    }
+    function del(){
+        inputtitle = document.getElementById("sent");
+        inputtitle.innerHTML = "";
+        localStorage.clear();
+    }
+    </script>
+    <style type="text/css">
+    body{
+        text-align:center;
+    }
+    </style>
+</body>
